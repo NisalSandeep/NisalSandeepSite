@@ -197,6 +197,8 @@ body {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    z-index: 1001;
+    position: relative;
 }
 
 .nav-toggle span {
@@ -745,6 +747,26 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Disable heavy animations on mobile for better performance */
+    .gradient-orb {
+        animation: none !important;
+        opacity: 0.08;
+    }
+    
+    .project-glass-card,
+    .achievement-glass-card,
+    .timeline-glass-card,
+    .blog-glass-card {
+        transition: none;
+    }
+    
+    .project-glass-card:hover,
+    .achievement-glass-card:hover,
+    .timeline-glass-card:hover,
+    .blog-glass-card:hover {
+        transform: none;
+    }
+
     .glass-nav {
         top: 10px;
         width: calc(100% - 20px);
@@ -759,13 +781,13 @@ body {
         background: rgba(0, 0, 0, 0.95);
         backdrop-filter: blur(20px);
         width: calc(100% - 20px);
-        left: 10px;
         text-align: center;
-        transition: 0.3s;
+        transition: left 0.3s ease;
         padding: 2rem 0;
         border-radius: 20px;
         border: 1px solid rgba(0, 255, 136, 0.2);
-        gap: 0;
+        gap: 1rem;
+        z-index: 999;
     }
 
     .nav-menu.active {
@@ -776,12 +798,33 @@ body {
         display: flex;
     }
 
+    .nav-menu li {
+        padding: 0.5rem 0;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0.8rem 1rem;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
 
     .hero-subtitle {
         font-size: 1.2rem;
+    }
+
+    .animated-text {
+        white-space: normal;
+        border-right: none;
+        animation: none;
+        width: auto;
+    }
+
+    .animated-text.delay-1 {
+        animation: none;
+        width: auto;
     }
 
     .section-title {
@@ -797,10 +840,24 @@ body {
 
     .hero-buttons {
         flex-direction: column;
+        width: 100%;
     }
 
     .glass-btn {
         width: 100%;
+        text-align: center;
+    }
+
+    .project-image {
+        height: 180px;
+    }
+
+    .timeline-glass-card {
+        padding: 1.5rem;
+    }
+
+    .container {
+        padding: 0 15px;
     }
 }
 
@@ -815,5 +872,29 @@ body {
 
     .section-title {
         font-size: 1.7rem;
+    }
+
+    .hero-title {
+        font-size: 1.7rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skill-badge {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .title-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
     }
 }
