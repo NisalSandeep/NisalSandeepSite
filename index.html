@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NisalSandeep - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="container">
+            <div class="nav-brand">NS</div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-glass">
+                <div class="hero-content">
+                    <div class="profile-image">
+                        <img src="./my.png" alt="Profile">
+                    </div>
+                    <h1 class="hero-title">Hi, I'm Nisal Sandeep</h1>
+                    <p class="hero-subtitle">
+                        <span class="animated-text">Data Analyst</span><br>
+                        <span class="animated-text delay-1">Developer & CyberSecurity Researcher</span>
+                    </p>
+                    <div class="location-badge glass-badge">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Colombo, Sri Lanka 🇱🇰</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="./My_CV.pdf" class="btn-primary glass-btn">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn-secondary glass-btn">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="glass-card">
+                <h2 class="section-title">
+                    <span class="title-icon"><i class="fas fa-user"></i></span>
+                    Nice to Meet you!
+                </h2>
+                <p class="about-text">
+                    An undergraduate pursuing degrees in Accounting Information Systems at the University of Kelaniya
+                    and
+                    Information Technology at the University of Colombo. Focused on bridging the gap between business
+                    needs
+                    and IT solutions through strong analytical thinking and effective communication. Also working as a
+                    freelancer
+                    specializing in Full-Stack Development, Cybersecurity, and Web Technologies
+                </p>
+                <div class="skills-container">
+                    <div class="skill-badge glass-badge">CyberSecurity</div>
+                    <div class="skill-badge glass-badge">Frontend</div>
+                    <div class="skill-badge glass-badge">Backend</div>
+                    <div class="skill-badge glass-badge">Data Analysis</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-code"></i></span>
+                Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-glass-card">
+                    <div class="project-image">
+                        <img src="./2.png"
+                            alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Online E-Commerce Shop</h3>
+                        <p>Full-Stack Web Application (Node.js, Express, EJS, CSS, JavaScript)
+                            Developed a complete e-commerce platform with product management, user authentication,
+                            shopping cart, and checkout features. Implemented MVC architecture using Node.js and Express
+                            with EJS templates for dynamic pages. Focused on clean routing, modular code, and responsive
+                            UI
+                            design.</p>
+                        <div class="project-tags">
+                            <span class="tag">Ejs</span>
+                            <span class="tag">MVC</span>
+                            <span class="tag">Javascript</span>
+                        </div>
+                        <a href="https://github.com/NisalSandeep/Online-E-Commerce-Shop" class="project-link glass-btn">
+                            <i class="fas fa-code"></i> View Source
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <!-- <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-trophy"></i></span>
+                Achievements
+            </h2>
+            <div class="achievements-grid">
+                <div class="achievement-glass-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>IntelliHack Winner</h3>
+                    <p>First-ever Machine Learning hackathon in Sri Lanka. Secured top position among 50+ teams.</p>
+                </div>
+
+                <div class="achievement-glass-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>IEEE Volunteer of the Month</h3>
+                    <p>IEEE Computer Society Sri Lankan Chapter recognized for outstanding contributions.</p>
+                </div>
+
+                <div class="achievement-glass-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>JuniorHack Champion</h3>
+                    <p>Hackathon for 1st year undergraduates at University of Kelaniya - 1st Place.</p>
+                </div>
+
+                <div class="achievement-glass-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Genesiz'24 Winner</h3>
+                    <p>Hackathon organized by Sir John Kothalawala Defence University - 1st Place.</p>
+                </div>
+
+                <div class="achievement-glass-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>IEEE Xtreme Champion</h3>
+                    <p>Global coding competition - 1st place in University of Kelaniya.</p>
+                </div>
+
+                <div class="achievement-glass-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Unihack'25 Winner</h3>
+                    <p>1st Inter-University Blockchain Hackathon in Sri Lanka - Top Position.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-briefcase"></i></span>
+                Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline-glass-card">
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Freelance Full Stack Developer </h3>
+                        <p>Worked on e-commerce and LMS projects using the WordPress CMS.
+                            Currently pursuing MERN Stack Development to enhance full-stack web development skills.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-glass-card">
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3> Undergraduate</h3>
+                        <p>Full-time researcher at University of Kelaniya and University of Colombo, Sri Lanka 🇱🇰.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-blog"></i></span>
+                Latest Blog Posts
+            </h2>
+            <div class="blog-grid">
+                <div class="blog-glass-card">
+                    <div class="blog-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Genetic Algorithms</h3>
+                    <p>Discover how Genetic Algorithms, inspired by the principles of natural selection, are
+                        revolutionizing problem-solving in AI.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="blog-glass-card">
+                    <div class="blog-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Virtualization Technology</h3>
+                    <p>Dive into the world of virtualization, a technology that enables efficient use of resources by
+                        creating multiple virtual environments.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="blog-glass-card">
+                    <div class="blog-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python in IT</h3>
+                    <p>Python's simplicity and power make it a go-to programming language across various IT domains,
+                        from web development to AI.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="blog-glass-card">
+                    <div class="blog-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Agentic Systems</h3>
+                    <p>Discover how AI agentic systems in LangChain enhance the capabilities of language models through
+                        function calling.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="blog-glass-card">
+                    <div class="blog-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Computing</h3>
+                    <p>Uncover the transformative potential of cloud computing, revolutionizing how businesses operate
+                        and scale their operations.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-glass">
+                <div class="social-links">
+                    <a href="https://github.com/NisalSandeep" class="social-link glass-btn">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nisal-sandeep" class="social-link glass-btn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:nisalsandeep45@gmail.com" class="social-link glass-btn">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p>&copy; 2025 Nisal Sandeep. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
